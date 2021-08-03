@@ -1,0 +1,385 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,400&display=swap');
+
+body,h1,h2,p,ul,a,li{
+    margin: 0px; /* para deixar a margem do site zerada */
+    padding: 0px;
+}
+
+body{
+    font-family: 'Nunito', sans-serif; /* definindo a font aqui ela fica para todo o site */
+    color: #222222;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%; /* assim a imagem vai se adptar a diferentes tipos de tela*/
+}
+
+*{
+    box-sizing: border-box; /* isso faz com que o width definido seja respeitado*/
+}
+
+/*superinfo*/
+.superinfo-bg{
+    background: #122ab2;
+    color: white;
+}
+
+.superinfo a {
+    color: white;
+}
+
+.superinfo{
+    max-width: 960px;
+    display: flex; /* os itens por padrão vão ficar lado a lado*/
+    justify-content: space-between; /* cria um espaçamento igual entre os elementos*/
+    margin: 0 auto; /* alinha ao centro*/
+    flex-wrap: wrap; /* isso faz com que os elementos quebrem para a proxima linha quando a largura diminuir*/
+    padding-top: 10px;
+}
+
+.superinfo p , .superinfo a {
+    margin: 0 10px 10px 10px;
+}
+
+/*menu*/
+
+.menu-bg{
+    background: #2c70ff;
+}
+
+.menu{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap; /* isso faz com que os elementos quebrem para a proxima linha quando a largura diminuir*/
+    justify-content: space-between; /* para deixar a logo de um lado e o menu do outro */
+    align-items: center; /* para alinhar a logo e o menu */
+    
+}
+
+.menu a {
+    color: white;
+}
+
+.menu-logo a{
+    font-size: 2.25em; /* divide a quantidade de px pela base que geralmente e 16*/
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap; /* isso faz com que os elementos quebrem para a proxima linha quando a largura diminuir*/
+    
+}
+
+.menu-nav a{
+    font-size: 1.25em;
+    display: block; /* por padrão o a é display inline, botando block vou influenciar no padding dele*/
+    margin: 10px;
+}
+
+.menu-nav a:hover{
+   color: #122ab2;
+}
+
+/*introdução*/
+
+.introducao{
+    font-size: 3em;
+    line-height: 1; /* altura da linha*/
+    max-width: 960px;
+    margin: 0 auto; /* alinha ao centro*/
+    padding: 60px 10px;
+
+}
+
+/*Sobre*/
+
+.sobre{
+    border-top: 2px solid #2c70ff;
+    border-bottom: 2px solid #2c70ff;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap; /* isso faz com que os elementos quebrem para a proxima linha quando a largura diminuir*/
+    
+    
+
+}
+
+.sobre-info{
+    flex: 2 1 300px ;
+    margin: 0 10px;
+}
+
+.sobre-info h1{
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.sobre-info p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: #7c7c7c;
+}
+
+.sobre-img{
+    flex: 1 1 160px;
+    margin: 0 10px;
+}
+
+/*produtos*/
+
+.produtos{
+    max-width: 960px;
+    margin: 60px auto;
+}
+
+.produtos h1{
+    font-size: 3em;
+    margin: 0 10px 60px 10px;
+}
+
+.produtos-container{
+    display: flex;
+    flex-wrap: wrap; /* isso faz com que os elementos quebrem para a proxima linha quando a largura diminuir*/
+    align-items: flex-end;
+    
+}
+
+.produtos-item{
+    flex: 1 1 175px; /*flex-grow, flex-shrink,flex-basis*/
+    margin: 10px; /* vale para todos os lados*/
+   
+}
+
+.produtos-item h2 {
+    font-size: 3em;
+    color: #a4a4a4;
+    background: #f7f7f7;
+    padding: 60px 20px;
+}
+
+.purple{
+    border-top: 8px solid #ae81ff;
+}
+
+.pink{
+    border-top: 8px solid #f9265e ;
+}
+
+.blue{
+    border-top: 8px solid #66d9eb;
+}
+
+.precos{
+background: #F7F7F7;
+padding: 60px;
+display: flex;
+flex-wrap: wrap;
+align-items: flex-end;
+}
+
+.preco-item{
+    flex: 1;
+    border: 4px solid white;
+    padding: 20px;
+    margin: 10px;
+}
+
+.preco-item h2{
+    font-size: 3em;
+    color: #A4ACC1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.preco-item span{
+    max-width: 300px; 
+    margin: 20px auto;
+    display: block; /* por padrão o a é display inline, botando block vou influenciar no padding dele*/
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 10px 0 5px 0;
+    border-top:  4px solid white;
+    border-bottom: 4px solid  white;
+}
+
+.preco-item sup{
+    font-size: 1.5rem;
+}
+
+.preco-item ul{
+    max-width: 300px;
+    margin: 20px auto;
+    font-size: 1.25em;
+    font-style: italic;
+    color: #a19d9d;
+    
+}
+
+.preco-item li {
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+.preco-item li::after { /* apos o li */
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #2C70FF;
+    border-radius: 50%;
+}
+
+/*qualidade*/
+
+.qualidade{
+    max-width: 960px;
+    margin:60px  auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-qualidade{
+    flex: 1 1 300px;
+    margin: 20px 10px;
+}
+.item-qualidade h2{
+   font-size: 2.25em;
+   color: #A4A4A4;
+   margin-bottom: 20px;
+}
+
+.item-qualidade h2::before{
+    content:    '';
+    display: inline-block; /*para ficar alinhado*/
+    width: 8px;
+    height: 30px;
+    margin-right: 10px;
+    background: #AE81FF;
+}
+
+.item-qualidade:nth-of-type(3n+1) /*usar essa expressão para pegar os itens expecifico */ h2::before{ /*para falar com um item especifico, sem usar varias classes*/
+    background:#ae81ff;
+}
+
+.item-qualidade:nth-of-type(3n+2) /*usar essa expressão para pegar os itens expecifico */ h2::before{ /*para falar com um item especifico, sem usar varias classes*/
+    background:#f9265e;
+}
+
+.item-qualidade:nth-of-type(3n+3) /*usar essa expressão para pegar os itens expecifico */ h2::before{ /*para falar com um item especifico, sem usar varias classes*/
+    background:#66D9EB;
+}
+
+.item-qualidade p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: #7C7C7C;
+
+}
+
+
+/*newsletter*/
+
+
+.newsletter{
+    background: #F7F7F7;
+    padding: 60px calc((100% - 960px) / 2 );
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-info{
+    flex: 1 1 260px;
+    margin: 0 10px;
+}
+
+.newsletter-info h1{
+    font-size: 3em;
+    color: #a4a4a4;
+}
+
+.newsletter-info p{
+    font-size: 1.25em;
+    font-style: italic;
+    max-width: 230px;
+    color:#a4a4a4;
+    margin-bottom: 10px;
+}
+
+.newsletter-form{
+    flex: 2 1 260px;
+    margin: 0 10px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input{
+    flex: 3 1 200px;
+    font-size: 1.25em;
+    color: #757575;
+    font-style: italic;
+    font-family: 'Nunito', sans-serif;
+    border: 4px solid #2C70FF;
+    background: transparent;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+.newsletter-form button{
+    flex: 1 1 200px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.25em;
+    font-weight: bold;
+    text-transform: uppercase; /*para colocar tudo em letra maiúscula*/
+    background:#2C70FF ;
+    color: white;
+    margin: 0px;
+    cursor: pointer;
+    border: 0px;
+    padding: 15px 10px;
+
+}
+
+@media(  max-width:600px){
+    .newsletter-form button{
+        font-size: 1.5em;  
+    }
+    
+}
+/*footer*/
+
+.footer{
+    display: flex;
+    height: 200px;
+    background: #2C70FF;
+    align-items: center;
+}
+
+.footer p{
+    flex: 1;
+    text-align: center;
+    font-size: 2.25em;
+    color: #122AB2;
+}
